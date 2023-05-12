@@ -33,8 +33,7 @@ class DataStorageGUI(tk.Frame):
         for i in range(25):
 
             self.ui_boxes[i] = tk.Entry(self)
-            self.
-            self.ui_boxes[i].grid(row=i+2, column=0, columnspan=2)
+            self.ui_boxes[i].grid(row=i+2, column=0, columnspan=8)
             self.ui_boxes[i].bind('<Button-1>', self.copy_data)
 
     def save_data(self, event):
@@ -62,7 +61,8 @@ class DataStorageGUI(tk.Frame):
 
 if __name__ == '__main__':
     root = tk.Tk()
-    root.title("CopyBuddy 1.0")
+    root.title("CopyBruh 1.0")
     #root.iconbitmap("icon file here")
     app = DataStorageGUI(master=root)
+
     app.mainloop()
